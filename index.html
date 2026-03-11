@@ -138,13 +138,13 @@
 
 <section class="hero">
     <div class="hero-badge">📄 Senior Project · 2025</div>
-    <h1 class="hero-title-th">การพัฒนาระบบตอบกลับอัตโนมัติ<br>ในการตรวจสอบข่าวสุขภาพภาษาไทย</h1>
-    <p class="hero-title-en">Development of an Automated Health News Verification Response System in Thai</p>
+    <h1 class="hero-title-th">การพัฒนาระบบตอบกลับอัตโนมัติ<br>ในการตรวจสอบข่าวสุขภาพภาษาไทย<br>ด้วยแบบจำลองภาษาขนาดใหญ่<br>ร่วมกับเทคนิคการสร้างคำตอบจากการดึงข้อมูล</h1>
+    <p class="hero-title-en">Development of an Automated Health News Verification Response System in Thai<br>Using Large Language Models and Retrieval-Augmented Generation</p>
 </section>
 
 <div class="container">
     <div class="stats-bar reveal">
-        <div class="stat-item"><div class="stat-num">3,373</div><div class="stat-label">Articles</div></div>
+        <div class="stat-item"><div class="stat-num">3,373</div><div class="stat-label">Thai Health News</div></div>
         <div class="stat-item"><div class="stat-num">93%</div><div class="stat-label">Accuracy</div></div>
         <div class="stat-item"><div class="stat-num">0.90</div><div class="stat-label">F1-Score</div></div>
         <div class="stat-item"><div class="stat-num">RAG</div><div class="stat-label">Technology</div></div>
@@ -189,10 +189,16 @@
                 <button class="lang-tab" onclick="switchLang('en')">🇬🇧 English</button>
             </div>
             <div id="abstract-th" class="abstract-text">
-                งานวิจัยนี้ได้พัฒนาระบบตอบกลับอัตโนมัติในการตรวจสอบข่าวสุขภาพภาษาไทย โดยใช้แบบจำลองภาษาขนาดใหญ่ (LLM) ร่วมกับเทคนิค Retrieval-Augmented Generation (RAG) เพื่อเพิ่มความแม่นยำและลดการสร้างข้อมูลเท็จ (Hallucination) โดยใช้ข้อมูลจากศูนย์ต่อต้านข่าวปลอมประเทศไทยจำนวน 3,373 ข่าว...
+                ปัญหาการแพร่กระจายของข่าวปลอมในสื่อออนไลน์เป็นภัยคุกคามสำคัญต่อสังคมไทย โดยข้อมูลจากศูนย์ต่อต้านข่าวปลอมประเทศไทยพบว่า ข่าวปลอมที่อยู่ในหมวดสุขภาพคิดเป็นร้อยละ 36.71 ของทุก ๆ หมวด ซึ่งส่งผลกระทบต่อการตัดสินใจด้านสุขภาพของประชาชน เพื่อตอบโจทย์ปัญหานี้ จึงได้มีการพัฒนาระบบตรวจสอบข่าวโดยการใช้แบบจำลองภาษาขนาดใหญ่ แต่ยังคงมีข้อจำกัดในการสร้างข้อความที่ไม่เกี่ยวข้องกันหรือไม่มีอยู่จริง งานวิจัยนี้จึงได้พัฒนาระบบตอบกลับอัตโนมัติในการตรวจสอบข่าวสุขภาพภาษาไทย โดยใช้แบบจำลองภาษาขนาดใหญ่ร่วมกับเทคนิคการสร้างคำตอบด้วยการดึงข้อมูลภายนอกจากแหล่งอ้างอิงที่น่าเชื่อถือเพื่อให้ข้อมูลเป็นปัจจุบัน ในการวิจัยได้ใช้ข้อมูลข่าวสุขภาพภาษาไทยจำนวน 3,373 ข่าว จากศูนย์ต่อต้านข่าวปลอมประเทศไทย โดยใช้โมเดล Typhoon2-Qwen2.5-7B-Instruct ในการสร้างคำตอบให้กับระบบ ซึ่งทำการทดสอบประสิทธิภาพด้วยชุดทดสอบ 200 ข่าว<br><br>จากผลการทดสอบประสิทธิภาพพบว่า ระบบมีความแม่นยำร้อยละ 93.00 (F1-score 0.9027) เมื่อทดสอบกับชุดข้อความคลุมเครือมีความแม่นยำร้อยละ 92.16 (F1-score 0.8947) ชุดข้อความที่มีการเขียนผิดมีความแม่นยำร้อยละ 89.83 (F1-score 0.8500) และชุดข้อความที่มีความหมายตรงข้ามมีความแม่นยำที่ร้อยละ 74.36 (F1-score 0.7826) ซึ่งแสดงให้เห็นว่าระบบสามารถตรวจสอบข่าวสุขภาพได้อย่างมีประสิทธิภาพ นอกจากนี้ ระบบยังตอบกลับพร้อมเหตุผลประกอบการจำแนกประเภทข่าว รวมถึงแสดงแหล่งอ้างอิง (URLs) จากแหล่งข้อมูลที่น่าเชื่อถือ และให้คำแนะนำเพิ่มเติมที่เหมาะสม
+                <div class="keywords">
+                    <strong>คำสำคัญ :</strong> เทคนิคการสร้างคำตอบจากการดึงข้อมูล, แบบจำลองภาษาขนาดใหญ่, การประมวลผลภาษาธรรมชาติ, ข่าวปลอมด้านสุขภาพ, ระบบตรวจสอบข่าวสุขภาพภาษาไทย
+                </div>
             </div>
             <div id="abstract-en" class="abstract-text hidden">
-                This research developed an automated health news verification system using LLM and RAG techniques to improve accuracy and reduce hallucinations in Thai health news verification...
+                The spread of fake news on social media poses a significant threat to Thai society. The Anti-Fake News Center Thailand reported that health-related fake news accounted for 36.71% of all categories, impacting public health decision-making. To address this issue, news verification systems using Large Language Models (LLMs) have been developed. However, these systems still have limitations, such as generating irrelevant or non-existent information, which can lead to hallucinations. This research developed an automated health news verification response system in Thai using LLMs and Retrieval-Augmented Generation (RAG) with information retrieved from credible sources to ensure that the information remains current and accurate.<br><br>The study utilized 3,373 Thai health news articles from the Anti-Fake News Center Thailand. The Typhoon2-Qwen2.5-7B-Instruct model was used to generate responses, and the system was evaluated using a test set of 200 news topics. The performance results showed that the system achieved an accuracy of 97.00% (F1-score 0.9605). When tested with ambiguous text, the accuracy was 94.12% (F1-score 0.9189). For text containing typographical errors, the accuracy was 89.83% (F1-score 0.8500). And for text with opposite meanings, the accuracy was 74.36% (F1-score 0.7826). The results demonstrate the system's potential to be applied as a practical tool for verifying Thai health news, improving convenience, speed, and reliability of the verification process.
+                <div class="keywords">
+                    <strong>Keywords:</strong> Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), Natural Language Processing (NLP), Health misinformation, Thai health news verification system
+                </div>
             </div>
         </div>
     </div>
@@ -226,7 +232,7 @@
             <h2 class="section-heading"><span>วิดีโอสาธิต</span></h2>
         </div>
         <div class="video-wrapper reveal">
-            <video controls poster="images/workflow system.png">
+            <video controls poster="images/ำเสนอ web app(frontend).mp">
                 <source src="images/นำเสนอ web app(frontend).mp4" type="video/mp4">
             </video>
         </div>
@@ -242,7 +248,7 @@
         <div class="doc-grid reveal">
             <a href="images/แก้_เนื้อหา form1.pdf" target="_blank" class="doc-card">
                 <div class="doc-icon">PDF</div>
-                <div class="doc-title">โครงร่างวิจัย (Proposal)</div>
+                <div class="doc-title">เค้าโครงงานวิจัย (Proposal)</div>
                 <div style="margin-left:auto; color:var(--teal)">→</div>
             </a>
         </div>
